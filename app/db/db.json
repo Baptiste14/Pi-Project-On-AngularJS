@@ -1,10 +1,10 @@
 {
        types: {
-           "Movie": {
-               pluralLabel:  "Movies"
+           "movie": {
+               pluralLabel:  "movies"
            }
-           "Music": {
-               pluralLabel:  "Musics"
+           "music": {
+               pluralLabel:  "musics"
            }
        },
        properties: {

@@ -1,5 +1,5 @@
 'use strict';
-var url_movies = 'db.json';
+var url_movies = '/db.json';
 
 angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
@@ -42,10 +42,10 @@ angular.module('responsiveApp')
             $scope.movies.splice(index, 1);
         }
 
-//        $http.get(url_movies).success(function(data){
-//            console.log(data);
-//            $scope.movies = data;
-//        });
+       $http.get(url_movies).success(function(data){
+           console.log(data);
+           $scope.movies = data;
+       });
 
     });
 

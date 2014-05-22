@@ -1,57 +1,57 @@
 {
-       types: {
-           "Movie": {
-               pluralLabel:  "Movies"
-           }
-           "Music": {
-               pluralLabel:  "Musics"
+       "types": {
+           "movie": {
+               "pluralLabel":  "movies"
+           },
+           "music": {
+               "pluralLabel":  "musics"
            }
        },
-       properties: {
+       "properties": {
            "title": {
-               valueType:    "text"
+               "valueType":    "text"
            },
            "author": {
-               valueType:    "text"
+               "valueType":    "text"
            },
            "actors": {
-               valueType:    "text"
+               "valueType":    "text"
            },
            "year": {
-               valueType:    "text"
+               "valueType":    "text"
            },
            "length": {
-               valueType:    "text"              
+               "valueType":    "text"              
            }
        },
-       items: [
-           {   title:             "Lord of war",
-               author:            "Toto",
-               actors:            "Jean jack",
-               year:              "2010",
-               length:            "186",
-               type:              "Movie"
+       "items": [
+           {   "title":             "Lord of war",
+               "author":            "Toto",
+               "actors":            "Jean jack",
+               "year":              "2010",
+               "length":            "186",
+               "type":              "Movie"
             },
-           {   title:             "Les cancres",
-               author:            "Jack",
-               actors:            "Franck",
-               year:              "2028",
-               length:            "23",
-               type:              "Movie"
+           {   "title":             "Les cancres",
+               "author":            "Jack",
+               "actors":            "Franck",
+               "year":              "2028",
+               "length":            "23",
+               "type":              "Movie"
             },
-           {   title:             "La terre est ronde",
-               author:            "Orelsan",
-               actors:            "",
-               year:              "2008",
-               length:            "3",
-               type:              "Music"
+           {   "title":             "La terre est ronde",
+               "author":            "Orelsan",
+               "actors":            "",
+               "year":              "2008",
+               "length":            "3",
+               "type":              "Music"
             },
-           {   title:             "Bonne ****",
-               author:            "Tairo",
-               actors:            "",
-               year:              "2006",
-               length:            "4",
-               type:              "Music"
+           {   "title":             "Bonne ****",
+               "author":            "Tairo",
+               "actors":            "",
+               "year":              "2006",
+               "length":            "4",
+               "type":              "Music"
             },
        ]
    }
