@@ -41,6 +41,7 @@
             },
            {   title:             "La terre est ronde",
                author:            "Orelsan",
+               actors:            "",
                year:              "2008",
                length:            "3",
                type:              "Music"
