@@ -5,7 +5,14 @@
   border-radius: $radius;
 }
 
-@mixin boxed($radius, $color) {
+@mixin grad($color1, $color2) {
+  background: -webkit-linear-gradient(left bottom, $color1, $color2);
+  background: -o-linear-gradient(top right, $color1, $color2);
+  background: -moz-linear-gradient(top right, $color1, $color2);
+  background: linear-gradient(to top right, $color1, $color2);
+}
+
+@mixin boxed($radius, $color1, $color2) {
   @include border-radius($radius);
-  background-color: $color;
+  @include grad($color1, $color2);
 }

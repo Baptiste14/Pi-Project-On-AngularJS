@@ -2,7 +2,8 @@
 @import "standards/mixins.scss";
 
 .content{
-  @include boxed(10px, $lightGrey);
+  @include boxed(10px, $lightGrey, $vlightGrey);
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 10px;
 }
