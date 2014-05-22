@@ -2,6 +2,6 @@
 angular.module('responsiveApp').directive('movieDisplay', function(){
     return {
         restrict: 'E',
-        templateUrl: 'views/movie.html'
+        templateUrl: 'views/objects/movie.html'
     };
 });

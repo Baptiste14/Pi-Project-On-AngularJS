@@ -4,3 +4,8 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin boxed($radius, $color) {
+  @include border-radius($radius);
+  background-color: $color;
+}
