@@ -3,21 +3,17 @@
     <div class="col-lg-12">
         <h2>Add new content</h2>
         
-        <form class="col-md-12 col-sm-12 cal-xs-12" ng-submit="sendContent()">
-        	<div class="type-btn">
-			  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
-			    Large button <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu">
-			    <li>Movie</li>
-				<li>Music</li>
-				<li>Others</li>
-			  </ul>
-			</div>
-        	<input type="text" id="Title" ng-model="titre"></input><BR>
-        	<input type="text" id="Author" ng-model="author"></input><BR>
-        	<input type="text" id="Year" ng-model="year"></input><BR>
-        	<input type="text" id="Track" ng-model="track"></input><BR>
+        <form class="col-md-12 col-sm-12 cal-xs-12" ng-submit="addContent()">
+        	<li class="dropdown"><img role="button" class="dropdown-toggle" data-toggle="dropdown"/>
+		      <ul class="dropdown-menu pull-right" role="menu">
+		        <li ng-hide="user"><a ng-click="">Movie</a></li>
+		        <li ng-show="user"><a ng-click="">Music</a></li>
+		      </ul>
+		    </li>
+        	Title : <input type="text" id="Title" ng-model="titre"></input><BR>
+        	Author : <input type="text" id="Author" ng-model="author"></input><BR>
+        	Year : <input type="text" id="Year" ng-model="year"></input><BR>
+        	Track : <input type="text" id="Track" ng-model="track"></input><BR>
 
         </form>
     </div>
