@@ -1,11 +1,7 @@
 @import "standards/colors.scss";
 @import "standards/mixins.scss";
 
-.header {
+.footer {
   @include boxed(10px, $deepBlue);
   height: 100px;
-}
-
-.header li a:hover{
-  cursor: pointer;
 }

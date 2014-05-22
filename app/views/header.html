@@ -1,10 +1,10 @@
 <div class="header">
     <ul class="nav nav-pills pull-right">
-        <li class="active"><a ng-href="#">Home</a></li>
-        <li><a ng-href="/#/musics">Musics</a></li>
-        <li><a ng-href="/#/movies">Movies</a></li>
-        <li><a ng-href="#">About</a></li>
-        <li><a ng-href="#">Contact</a></li>
+        <li ng-class="{active:location == '/'}"><a ng-href="#">Home</a></li>
+        <li ng-class="{active:location == '/musics'}"><a ng-href="/#/musics" ng-click="tog=active">Musics</a></li>
+        <li ng-class="{active:location == '/movies'}"><a ng-href="/#/movies">Movies</a></li>
+        <li ng-class="{active:location == '/about'}"><a ng-href="#">About</a></li>
+        <li ng-class="{active:location == '/contact'}"><a ng-href="#">Contact</a></li>
     </ul>
     <h3 class="text-muted">Pi Project</h3>
 </div>

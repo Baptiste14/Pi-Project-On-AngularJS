@@ -2,7 +2,11 @@
 var url_movies = '/db.json';
 
 angular.module('responsiveApp')
-    .controller('MainCtrl', function ($scope, $http) {
+    .controller('MainCtrl', function ($scope, $http, $location) {
+        $scope.location = null;
+
+        $scope.location = $location.path();
+
         $scope.items =
         [
                 {title: "1", author: "2", year: "1989", type: "movie"},
@@ -42,5 +46,6 @@ angular.module('responsiveApp')
            console.log(data);
            $scope.movies = data;
        });
+
     });
 
