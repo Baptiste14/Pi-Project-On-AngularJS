@@ -1,3 +1,6 @@
-.header {
+@import "colors.scss";
+@import "mixins.scss";
 
+.header {
+  background-color: $deepBlue;
 }
