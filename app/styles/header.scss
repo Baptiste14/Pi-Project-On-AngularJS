@@ -2,10 +2,16 @@
 @import "standards/mixins.scss";
 
 .header {
-  @include boxed(10px, $deepBlue);
+  @include boxed(10px, $deepBlue, $lightBlue);
   height: 100px;
+  color:$lightGrey;
 }
 
 .header li a:hover{
   cursor: pointer;
+  color:$deepBlue;
+}
+
+.header li a{
+  color:$vlightGrey;
 }
