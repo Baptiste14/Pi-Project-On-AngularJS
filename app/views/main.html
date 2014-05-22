@@ -2,12 +2,12 @@
 <div class="row">
     <div class="col-lg-12">
         <h2>Recent Additions</h2>
-        <div ng-repeat="item in items | orderBy : 'year' : reverse">
-            <music-display ng-if="item.type == 'music'"></music-display>
-            <movie-display ng-if="item.type == 'movie'"></movie-display>
-            <div class="clearfix" ng-if="$index%4 == 1"></div>
+            <div ng-repeat="item in items | orderBy : 'year' : reverse">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <music-display ng-if="item.type == 'music'"></music-display>
+                    <movie-display ng-if="item.type == 'movie'"></movie-display>
+                </div>
         </div>
     </div>
-
 </div>
 <ng-include src="'views/footer.html'"></ng-include>
