@@ -1,13 +1,13 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
+@import "standards/colors";
+@import "standards/mixins";
+@import "standards/dimens";
+@import "standards/bootstrap/bootstrap-theme";
+@import "standards/bootstrap/bootstrap";
+
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-
-@import "standards/colors.scss";
-@import "standards/mixins.scss";
-@import "standards/dimens.scss";
-@import "standards/bootstrap/bootstrap-theme.scss";
-@import "standards/bootstrap/bootstrap-theme.scss";
 // endbower
 
 .browsehappy {
