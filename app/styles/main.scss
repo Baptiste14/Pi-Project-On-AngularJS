@@ -5,12 +5,9 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 @import "standards/colors.scss";
 @import "standards/mixins.scss";
+@import "standards/dimens.scss";
 @import "standards/bootstrap/bootstrap-theme.scss";
 @import "standards/bootstrap/bootstrap-theme.scss";
-
-@import "header.scss";
-@import "footer.scss";
-@import "content.scss";
 // endbower
 
 .browsehappy {
@@ -22,60 +19,88 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: $lgPadding;
+    padding-bottom: $lgPadding;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
-}
+  @include boxed($mdRadius, $deepBlue, $lightBlue);
+  height: 100px;
+  color:$lightGrey;
+  padding-left: $mdPadding;
+  padding-right: $mdPadding;
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
+  li {
+    a:hover {
+      cursor: pointer;
+      color:$deepBlue;
+    }
+    a {
+      color:$vlightGrey;
+    }
+  }
+
+  li.active a{
+    @include grad($vlightGrey, $lightBlue);
+  }
+
+  li.active a:hover{
+    @include grad($blue, $vlightBlue);
+  }
+
+  h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
 }
 
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-}
+.content{
+  @include boxed($mdRadius, $lightGrey, $vlightGrey);
+  margin-top: $mdMargin;
+  margin-bottom: $mdMargin;
+  padding: $mdPadding;
 
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+  h2 {
+    font-family: "Calibri";
+    font-size: 2.5em;
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    color: $deepBlue;
+    padding-bottom: $mdPadding;
+  }
+
+  .panel {
+    .panel-heading {
+      font-size: 1.2em;;
+    }
+
+    .panel-footer {
+      @include grad(white, $vlightGrey);
+    }
+    .movie {
+      .panel-heading {
+        @include grad($deepBlue, $lightBlue);
+        color: $vlightGrey;
+      }
+    }
+
+    .music{
+      .panel-heading {
+        @include grad($lightBlue, $vlightGrey);
+      }
+    }
+  }
+
 }
 
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
+.footer {
+  @include boxed($mdRadius, $deepBlue, $lightBlue);
+  height: 100px;
+  color:$lightGrey;
+  padding-top: $lgPadding;
+  padding-left: $mdPadding;
+  padding-right: $mdPadding;
 }
 
 

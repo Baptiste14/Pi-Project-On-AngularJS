@@ -1,8 +1,0 @@
-@import "standards/colors.scss";
-@import "standards/mixins.scss";
-
-.footer {
-  @include boxed(10px, $deepBlue, $lightBlue);
-  height: 100px;
-  color:$lightGrey;
-}
