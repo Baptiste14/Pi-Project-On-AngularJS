@@ -1,5 +1,6 @@
 'use strict';
-var url_movies = '/db.json';
+var url_movies = 'http://pibaptiste.no-ip.biz/wd/search';
+
 
 angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
@@ -27,14 +28,25 @@ angular.module('responsiveApp')
                 {title: "8", author: "3", year: "1994", type: "music"}
         ];
 
-        $scope.add = function() {
-            var newPost = {quote: $scope.newQuote, author: $scope.newAuthor, date: new Date()};
+        $scope.addContent = function() {
+            console.log("--> Adding content");
+            var newPost = {
+                title: $scope.newTitle, 
+                author: $scope.newAuthor, 
+                year: $scope.newYear, 
+                type: $scope.newType, 
+                track: $scope.newTrack
+            };
 
-            $scope.quotes.push(newPost);
+            $scope.items.push(newPost);
             $http.post(url_movies, newPost);
 
-            $scope.newQuote = "";
-            $scope.newAuthor = "";
+            $scope.newTitle = null;
+            $scope.newAuthor = null;
+            $scope.newYear=null;
+            $scope.newTrack=null;
+            
+            $scope.newType=null;
         };
 
         $scope.remove = function(id, index) {
