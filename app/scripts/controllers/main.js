@@ -1,5 +1,6 @@
 'use strict';
-var url_movies = '/db.json';
+var url_movies = 'http://pibaptiste.no-ip.biz/wd/search';
+
 
 angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
