@@ -29,10 +29,6 @@ angular
             templateUrl: 'views/upload_music.html',
             controller: 'MainCtrl'
         })
-        .when('/Upload_other', {
-            templateUrl: 'views/upload_other.html',
-            controller: 'MainCtrl'
-        })
         .otherwise({
             redirectTo: '/'
         });
