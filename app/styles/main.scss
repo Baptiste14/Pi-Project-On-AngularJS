@@ -103,3 +103,9 @@ body {
 }
 
 
+.input-group-addon {
+    min-width:75px;
+    text-align:center;
+    @include grad($lightGrey, $vlightGrey);
+
+}

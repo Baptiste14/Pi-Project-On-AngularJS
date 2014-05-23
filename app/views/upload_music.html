@@ -5,12 +5,27 @@
 	        <h2>Add new music</h2>
 	        
 	        <form class="col-md-12 col-sm-12 cal-xs-12" ng-submit="addContent()">
-	        	Title : <input type="text" id="Title" ng-model="titre"></input><BR>
-	        	Author : <input type="text" id="Author" ng-model="author"></input><BR>
-	        	Year : <input type="text" id="Year" ng-model="year"></input><BR>
-	        	Track : <input type="text" id="Track" ng-model="track"></input><BR>
-	        	length : <input type="text" id="Length" ng-model="length"></input><br>
-
+	        	<div class="input-group">
+ 					<span class="input-group-addon">Title</span>
+  					<input type="text" class="form-control" placeholder="L'Art de la fugue" ng-model="titre"></input>
+				</div>
+				<div class="input-group">
+ 					<span class="input-group-addon">Author</span>
+  					<input type="text" class="form-control" placeholder="Jean-Sébastien Bach" ng-model="author"></input>
+				</div>
+				<div class="input-group">
+ 					<span class="input-group-addon">Year</span>
+  					<input type="number" class="form-control" placeholder="1750" ng-model="year"></input>
+				</div>
+				<div class="input-group">
+ 					<span class="input-group-addon">Track</span>
+  					<input type="number" class="form-control" placeholder="1" ng-model="track"></input>
+				</div>
+				<div class="input-group">
+ 					<span class="input-group-addon">Length</span>
+  					<input type="text" class="form-control" placeholder="3'45''" ng-model="length"></input>
+				</div><br><br>
+				<center><button type="button" class="btn btn-default">Send</button></center>
 	        </form>
 	    </div>
 	</div>
