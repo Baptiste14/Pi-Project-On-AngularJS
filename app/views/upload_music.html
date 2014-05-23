@@ -1,0 +1,18 @@
+<ng-include src="'views/header.html'"></ng-include>
+<DIV class="content">
+	<div class="row">
+	    <div class="col-lg-12">
+	        <h2>Add new music</h2>
+	        
+	        <form class="col-md-12 col-sm-12 cal-xs-12" ng-submit="addContent()">
+	        	Title : <input type="text" id="Title" ng-model="titre"></input><BR>
+	        	Author : <input type="text" id="Author" ng-model="author"></input><BR>
+	        	Year : <input type="text" id="Year" ng-model="year"></input><BR>
+	        	Track : <input type="text" id="Track" ng-model="track"></input><BR>
+	        	length : <input type="text" id="Length" ng-model="length"></input><br>
+
+	        </form>
+	    </div>
+	</div>
+</div>
+<ng-include src="'views/footer.html'"></ng-include>
