@@ -33,18 +33,43 @@ body {
     a:hover {
       cursor: pointer;
       color:$deepBlue;
+      @include grad($lightGrey, $vlightGrey);
     }
     a {
       color:$vlightGrey;
     }
+    .dropdown {
+        a:hover {
+          cursor: pointer;
+          color:$deepBlue;
+          @include grad($lightGrey, $vlightGrey);
+        }
+        a {
+          color:$vlightGrey;
+        }
+      .dropdown-menu {
+        @include grad($vlightGrey, $lightGrey);
+        li {
+          background: inherit;
+          a {
+            background: inherit;
+            color: $darkGrey;
+          }
+          a:hover{
+            color: $deepBlue;
+          }
+        }
+      }
+    }
+
   }
 
   li.active a{
-    @include grad($lightBlue, $lightBlue);
+    @include grad($lightBlue, $blue);
   }
 
   li.active a:hover{
-    @include grad($blue, $vlightBlue);
+    @include grad($vlightGrey, $lightGrey);
   }
 
   h3 {
@@ -52,6 +77,20 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
+}
+
+.open{
+  background-color: $darkGrey;
+}
+.open {
+  a {
+  background: white;
+    color: $deepBlue;
+  }
+  a:hover {
+    background: white;
+    color: $lightBlue;
   }
 }
 
@@ -104,8 +143,12 @@ body {
 
 
 .input-group-addon {
-    min-width:75px;
-    text-align:center;
-    @include grad($lightGrey, $vlightGrey);
+  min-width:75px;
+  text-align:center;
+  @include grad($deepBlue, $lightBlue);
+  color:$vlightGrey
+}
 
+.input-group{
+  @include shadowed();
 }
