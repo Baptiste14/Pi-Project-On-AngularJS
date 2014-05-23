@@ -1,5 +1,5 @@
 'use strict';
-var url_movies = 'http://pibaptiste.no-ip.biz/wd/search';
+//var url_movies = 'http://pibaptiste.no-ip.biz/wd/db';
 
 
 angular.module('responsiveApp')
@@ -39,7 +39,7 @@ angular.module('responsiveApp')
             };
 
             $scope.items.push(newPost);
-            $http.post(url_movies, newPost);
+            //$http.post(url_movies, newPost);
 
             $scope.newTitle = null;
             $scope.newAuthor = null;
@@ -50,14 +50,14 @@ angular.module('responsiveApp')
         };
 
         $scope.remove = function(id, index) {
-            $http.delete(url_movies+ "/" + id);
+            //$http.delete(url_movies+ "/" + id);
             $scope.movies.splice(index, 1);
         }
 
-       $http.get(url_movies).success(function(data){
-           console.log(data);
-           $scope.movies = data;
-       });
+       //$http.get(url_movies).success(function(data){
+       //    console.log(data);
+       //    $scope.movies = data;
+       //});
 
     });
 
