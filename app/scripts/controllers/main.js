@@ -1,5 +1,6 @@
 'use strict';
-//var url_movies = 'http://pibaptiste.no-ip.biz/wd/db';
+//var url = 'http://pibaptiste.no-ip.biz/piproject/app/db.json';
+var url = './db.json';
 
 
 angular.module('responsiveApp')
@@ -12,18 +13,6 @@ angular.module('responsiveApp')
         [
                 {title: "1", author: "2", year: "1989", type: "movie"},
                 {title: "2", author: "3", year: "1994", type: "movie"},
-                {title: "3", author: "2", year: "1960", type: "movie"},
-                {title: "4", author: "3", year: "1994", type: "movie"},
-                {title: "5", author: "2", year: "1960", type: "movie"},
-                {title: "6", author: "3", year: "1994", type: "movie"},
-                {title: "7", author: "2", year: "1993", type: "movie"},
-                {title: "8", author: "3", year: "1994", type: "movie"},
-                {title: "1", author: "2", year: "1989", type: "music"},
-                {title: "2", author: "3", year: "1994", type: "music"},
-                {title: "3", author: "2", year: "1993", type: "music"},
-                {title: "4", author: "3", year: "1960", type: "music"},
-                {title: "5", author: "2", year: "1993", type: "music"},
-                {title: "6", author: "3", year: "1960", type: "music"},
                 {title: "7", author: "2", year: "1993", type: "music"},
                 {title: "8", author: "3", year: "1994", type: "music"}
         ];
@@ -45,19 +34,23 @@ angular.module('responsiveApp')
             $scope.newAuthor = null;
             $scope.newYear=null;
             $scope.newTrack=null;
-            
             $scope.newType=null;
+
+            $location.path("/");
         };
 
         $scope.remove = function(id, index) {
             //$http.delete(url_movies+ "/" + id);
-            $scope.movies.splice(index, 1);
+            $scope.items.splice(index, 1);
         }
 
-       //$http.get(url_movies).success(function(data){
-       //    console.log(data);
-       //    $scope.movies = data;
-       //});
+        $http({method: 'GET', url: url})
+           .success(function(data){
+               $scope.items = data.items;
+               console.log(data);
+           })
+           .error(function(data) {
+                console.log(data);
+           });
 
     });
-
