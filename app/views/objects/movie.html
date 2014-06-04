@@ -2,12 +2,18 @@
     <div class="movie">
         <div class="panel-heading">
             <p>
-                {{item.title}}
-                {{item.type}}
+                Title : {{item.title}}
             </p>
         </div>
         <div class="panel-body">
-            {{item.author}}
+            Realisator : {{item.realisator}}
+            <div>
+                Casting : 
+                <div ng-repeat="actor in item.actors">
+                    {{actor}}
+                </div>
+            </div>
+            
         </div>
         <div class="panel-footer">
             {{item.year}}
