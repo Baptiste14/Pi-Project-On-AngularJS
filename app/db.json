@@ -30,26 +30,55 @@
        "items": [
            {   "title":             "Lord of war",
                "realisator":        "Toto",
-               "actors":            ["Jean jack"],
+               "actors":            [
+                                      {"name" : "Jack", "role" : "lead"},
+                                      {"name" : "Jean", "role" : "Antagonist"}
+                                    ],
                "year":              "2010",
                "length":            "186",
                "type":              "Movie"
             },
            {   "title":             "Les cancres",
                "realisator":        "Jack",
-               "actors":            ["Franck", "Jack"],
+               "actors":            [
+                                      {"name" : "Jack", "role" : "lead"},
+                                      {"name" : "John", "role" : "Second"}
+                                    ],
                "year":              "2028",
                "length":            "23",
                "type":              "Movie"
             },
            {   "title":             "La terre est ronde",
-               "author":            "Orelsan",
+               "artist":            "Orelsan",
+               "album":             "No sé",
                "year":              "2008",
                "length":            "3",
                "type":              "Music"
             },
+            {  "title":             "Chromophobia",
+               "artist":            "Gui Boratto",
+               "album":             "Chromophobia",
+               "year":              "2007",
+               "length":            "3",
+               "type":              "Music"
+            },
+            {  "title":             "No Turning Back",
+               "artist":            "Gui Boratto",
+               "album":             "Take My Breath Away",
+               "year":              "2005",
+               "length":            "3",
+               "type":              "Music"
+            },
+            {  "title":             "Hypnotized",
+               "artist":            "Oliver Koletzki",
+               "album":             "Grossstadtmarchen",
+               "year":              "20010",
+               "length":            "3",
+               "type":              "Music"
+            },
            {   "title":             "Bonne ****",
-               "author":            "Tairo",
+               "artist":            "Tairo",
+               "album":             "Don't know",
                "year":              "2006",
                "length":            "4",
                "type":              "Music"
