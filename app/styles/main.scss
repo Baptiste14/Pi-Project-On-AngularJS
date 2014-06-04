@@ -120,6 +120,10 @@ body {
       .panel-heading {
         @include grad($deepBlue, $lightBlue);
         color: $vlightGrey;
+
+        a {
+          color: inherit;
+        }
       }
     }
 
