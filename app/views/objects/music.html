@@ -25,16 +25,21 @@
                 </tr>
                 <tr>
                     <td>
-                        Track
+                        Tracks
                     </td>
                     <td>
-                        {{item.track}}
+                        {{item.musics.length}}
                     </td>
                 </tr>
             </table>
         </div>
         <div class="panel-footer">
             {{item.year}}
+            <a href="/#/musics/{{item.title}}">
+                <button class="btn btn-default pull-right">
+                    <span class="fa fa-edit"></span>
+                </button>
+            </a>
         </div>
     </div>
 </div>

@@ -43,14 +43,14 @@ angular.module('responsiveApp')
         $http.get(distant_url)
            .success(function(data) {
                 $scope.items = data.items;
-                console.log("Managed to get the items from distant URL");
+                console.log("Managed to get the items from distant URL.");
            })
            .error(function(data) {
-                console.log("Failed to get the items from URL. Using Local JSON");
+                console.log("Failed to get the items from distant URL. Using Local JSON.");
                 $http.get(local_url)
                    .success(function(data) {
                         $scope.items = data.items;
-                        console.log("Managed to get the items from local URL");
+                        console.log("Managed to get the items from local URL.");
                    })
                    .error(function(data) {
                         console.log("Failed to get the items. Fatal.");

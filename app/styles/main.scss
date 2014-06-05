@@ -1,7 +1,9 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
+
 @import "standards/colors";
 @import "standards/mixins";
+@import "standards/fonts";
 @import "standards/dimens";
 @import "standards/bootstrap/bootstrap-theme";
 @import "standards/bootstrap/bootstrap";
@@ -18,8 +20,9 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 }
 
 body {
-    padding-top: $lgPadding;
-    padding-bottom: $lgPadding;
+  padding-top: $lgPadding;
+  padding-bottom: $lgPadding;
+  font-family: "Acens";
 }
 
 .header {
@@ -101,7 +104,6 @@ body {
   padding: $mdPadding;
 
   h2 {
-    font-family: "Calibri";
     font-size: 2.5em;
     text-align: center;
     color: $deepBlue;
