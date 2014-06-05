@@ -32,7 +32,7 @@
              "title":             "Lord of war",
              "realisator":        "Toto",
              "actors":            [
-                                    {"name" : "Jack", "role" : "lead"},
+                                    {"name" : "Jack", "role" : "Lead"},
                                     {"name" : "Jean", "role" : "Antagonist"}
                                   ],
              "year":              "2010",
@@ -43,7 +43,7 @@
              "title":             "Les cancres",
              "realisator":        "Jack",
              "actors":            [
-                                    {"name" : "Jack", "role" : "lead"},
+                                    {"name" : "Jack", "role" : "Lead"},
                                     {"name" : "John", "role" : "Second"}
                                   ],
              "year":              "2028",

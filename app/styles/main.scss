@@ -125,6 +125,18 @@ body {
           color: inherit;
         }
       }
+
+      .panel-body {
+        table {
+          @include boxed($mdRadius, $vlightGrey, $lightBlue);
+          tr {
+            color: $deepBlue;
+            td {
+              padding: $smPadding;
+            }
+          }
+        } 
+      }
     }
 
     .music{
