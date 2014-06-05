@@ -8,3 +8,5 @@ dist/
 
 .sass-cache/
 .tmp/
+
+*.mp3
