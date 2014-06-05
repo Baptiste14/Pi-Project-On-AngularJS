@@ -4,7 +4,7 @@ var local_url = './db.json';
 
 
 angular.module('responsiveApp')
-    .controller('MusicCtrl', function ($scope, $http, $routeParams) {
+    .controller('ItemCtrl', function ($scope, $http, $routeParams) {
 
         console.log($routeParams.title);
 
