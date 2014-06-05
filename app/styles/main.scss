@@ -143,6 +143,18 @@ body {
       .panel-heading {
         @include grad($lightBlue, $vlightGrey);
       }
+
+      .panel-body {
+        table {
+          @include boxed($mdRadius, $deepBlue, $lightBlue);
+          tr {
+            color: $vlightGrey;
+            td {
+              padding: $smPadding;
+            }
+          }
+        } 
+      }
     }
   }
 

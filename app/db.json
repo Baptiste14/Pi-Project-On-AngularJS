@@ -50,20 +50,40 @@
              "length":            "23",
              "type":              "Movie"
             },
-           {   
-              "title":             "La terre est ronde",
-              "artist":            "Orelsan",
-              "album":             "No sé",
-              "year":              "2008",
+            {  
+              "title":             "Take My Breath Away",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
               "length":            "3",
+              "track":             "1",
               "type":              "Music"
             },
             {  
-              "title":             "Chromophobia",
+              "title":             "Atomic Soda",
               "artist":            "Gui Boratto",
-              "album":             "Chromophobia",
-              "year":              "2007",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
               "length":            "3",
+              "track":             "2",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Colors",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "3",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Opus 17",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "4",
               "type":              "Music"
             },
             {  
@@ -72,6 +92,52 @@
               "album":             "Take My Breath Away",
               "year":              "2005",
               "length":            "3",
+              "track":             "5",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Azzura",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "6",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Les Enfants",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "7",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Besides",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "8",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Ballroom",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "9",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Eggplant",
+              "artist":            "Gui Boratto",
+              "album":             "Take My Breath Away",
+              "year":              "2005",
+              "length":            "3",
+              "track":             "10",
               "type":              "Music"
             },
             {  
@@ -80,22 +146,223 @@
               "album":             "Take My Breath Away",
               "year":              "2005",
               "length":            "3",
+              "track":             "11",
               "type":              "Music"
             },
             {  
-              "title":             "Hypnotized",
-              "artist":            "Oliver Koletzki",
-              "album":             "Grossstadtmarchen",
-              "year":              "2010",
+              "title":             "Scene 1",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
               "length":            "3",
+              "track":             "1",
               "type":              "Music"
             },
-           {   
-              "title":             "Bonne ****",
-              "artist":            "Tairo",
-              "album":             "Don't know",
-              "year":              "2006",
-              "length":            "4",
+            {  
+              "title":             "Mr Decay",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "2",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Terminal",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "3",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Gate 7",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "4",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Shebang",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "5",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Chromophobia",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "6",
+              "type":              "Music"
+            },
+            {  
+              "title":             "The Blessing",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "7",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Mala Strana",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "8",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Acrostico",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "9",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Xilo",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "10",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Beautiful Life",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "11",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Hera",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "12",
+              "type":              "Music"
+            },
+            {  
+              "title":             "The Verdict",
+              "artist":            "Gui Boratto",
+              "album":             "Chromophobia",
+              "year":              "2008",
+              "length":            "3",
+              "track":             "13",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Seattle",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "1",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Chutzpan",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "2",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Lo Baiom Velo Balyla",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "3",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Pinzin Kinzin",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "4",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Puncha, puncha",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "5",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Eleven Wives",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "6",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Gently Disturbed",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "7",
+              "type":              "Music"
+            },
+            {  
+              "title":             "The Ever Evolving Etude",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "8",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Variations in G Minor",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "9",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Umray",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "10",
+              "type":              "Music"
+            },
+            {  
+              "title":             "Structures in Emotion",
+              "artist":            "Avishai Cohen",
+              "album":             "Gently Disturbed",
+              "year":              "2002",
+              "length":            "3",
+              "track":             "11",
               "type":              "Music"
             }
        ]
