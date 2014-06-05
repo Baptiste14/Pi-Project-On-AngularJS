@@ -47,19 +47,18 @@
         },
         {
             "title":"Les cancres",
-            "realisator":"Jack",
+            "realisator":"Jack X",
             "actors":[
                 {
-                    "name":"Jack",
+                    "name":"Jack X",
                     "role":"Lead"
                 },
                 {
-                    "name":"John",
-                    "role":"Second"
+                    "name":"John Lennon",
+                    "role":"Second Role"
                 }
             ],
-            "year":"2028",
-            "length":"23",
+            "year":"2008",
             "type":"Movie"
         },
         {

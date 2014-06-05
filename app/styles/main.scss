@@ -98,6 +98,7 @@ body {
   margin-top: $mdMargin;
   margin-bottom: $mdMargin;
   padding: $mdPadding;
+  @include boxedTable();
 
   h2 {
     font-size: 2.5em;
@@ -117,24 +118,17 @@ body {
     .panel-footer {
       @include grad(white, $vlightGrey);
     }
+
     .movie {
       .panel-heading {
         @include grad($deepBlue, $lightBlue);
         color: $vlightGrey;
-      }
-
-      .panel-body {
-        @include boxedTable();
       }
     }
 
     .music {
       .panel-heading {
         @include grad($lightBlue, $vlightGrey);
-      }
-
-      .panel-body {
-        @include boxedTable();
       }
     }
   }
