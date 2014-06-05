@@ -22,11 +22,11 @@ angular
             controller: 'ItemCtrl'
         })
         .when('/musics/:title', {
-            templateUrl: 'views/music.html',
+            templateUrl: 'views/album.html',
             controller: 'ItemCtrl'
         })
         .when('/musics', {
-            templateUrl: 'views/musics.html',
+            templateUrl: 'views/albums.html',
             controller: 'MainCtrl'
         })
         .when('/Upload_movie', {
