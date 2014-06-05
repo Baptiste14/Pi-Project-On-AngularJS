@@ -1,22 +1,27 @@
+<!-- Display Title, Realisator, year, Country?-->
 <div class = "panel">
-    <div class="music">
+    <div class="movie">
         <div class="panel-heading">
-            {{item.title}}
+            <p>
+                <a href="#/movie/{{item.title}}">{{item.title}}</a>
+            </p>
         </div>
         <div class="panel-body">
             <table class = "col-xs-12">
                 <tr>
                     <td>
-                        Track
+                        Realisator
                     </td>
                     <td>
-                        {{item.track}}
+                        {{item.realisator}}
                     </td>
                 </tr>
             </table>
         </div>
         <div class="panel-footer">
-            play
+            {{item.year}}
         </div>
     </div>
 </div>
+
+

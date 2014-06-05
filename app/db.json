@@ -69,47 +69,58 @@
             "musics":[
                 {
                     "title":"Take my Breath Away",
-                    "track":"1"
+                    "track":"1",
+                    "link":"./Library/Gui Boratto/01 - Gui Boratto - Take My Breath Away.mp3"
                 },
                 {
                     "title":"Atomic Soda",
-                    "track":"2"
+                    "track":"2",
+                    "link":"./Library/Gui Boratto/02 - Gui Boratto - Atomic Soda.mp3"
                 },
                 {
                     "title":"Colors",
-                    "track":"3"
+                    "track":"3",
+                    "link":"./Library/Gui Boratto/03 - Gui Boratto - Colors.mp3"
                 },
                 {
                     "title":"Opus 17",
-                    "track":"4"
+                    "track":"4",
+                    "link":"./Library/Gui Boratto/04 - Gui Boratto - Opus 17.mp3"
                 },
                 {
                     "title":"No Turning Back",
-                    "track":"5"
+                    "track":"5",
+                    "link":"./Library/Gui Boratto/05 - Gui Boratto - No Turning Back.mp3"
                 },
                 {
                     "title":"Azzura",
-                    "track":"6"
+                    "track":"6",
+                    "link":"./Library/Gui Boratto/06 - Gui Boratto - Azurra.mp3"
                 },
                 {
                     "title":"Les Enfants",
-                    "track":"7"
+                    "track":"7",
+                    "link":"./Library/Gui Boratto/07 - Gui Boratto - Les Enfants.mp3"
                 },
                 {
                     "title":"Besides",
-                    "track":"8"
+                    "track":"8",
+                    "link":"./Library/Gui Boratto/08 - Gui Boratto - Besides.mp3"
                 },
                 {
                     "title":"Ballroom",
-                    "track":"9"
+                    "track":"9",
+                    "link":"./Library/Gui Boratto/09 - Gui Boratto - Ballroom.mp3"
                 },
                 {
                     "title":"Eggplant",
-                    "track":"10"
+                    "track":"10",
+                    "link":"./Library/Gui Boratto/10 - Gui Boratto - Eggplant.mp3"
                 },
                 {
                     "title":"Godet",
-                    "track":"11"
+                    "track":"11",
+                    "link":"./Library/Gui Boratto/11 - Gui Boratto - Godet.mp3"
                 }
             ],
             "type":"Music"

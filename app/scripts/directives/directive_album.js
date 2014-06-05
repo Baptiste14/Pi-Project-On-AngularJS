@@ -2,6 +2,6 @@
 angular.module('responsiveApp').directive('albumDisplay', function(){
     return {
         restrict: 'E',
-        templateUrl: 'views/objects/album.html'
+        templateUrl: 'views/objects/album_display.html'
     };
 });
