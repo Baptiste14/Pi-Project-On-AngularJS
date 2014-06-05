@@ -21,3 +21,15 @@
   @include grad($color1, $color2);
 }
 
+@mixin boxedTable() {
+  table {
+    @include boxed($mdRadius, $vlightGrey, $lightBlue);
+    tr {
+      color: $deepBlue;
+      td {
+        padding: $smPadding;
+      }
+    }
+  } 
+}
+

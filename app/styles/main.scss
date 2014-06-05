@@ -127,15 +127,7 @@ body {
       }
 
       .panel-body {
-        table {
-          @include boxed($mdRadius, $vlightGrey, $lightBlue);
-          tr {
-            color: $deepBlue;
-            td {
-              padding: $smPadding;
-            }
-          }
-        } 
+        @include boxedTable();
       }
     }
 
@@ -145,15 +137,7 @@ body {
       }
 
       .panel-body {
-        table {
-          @include boxed($mdRadius, $deepBlue, $lightBlue);
-          tr {
-            color: $vlightGrey;
-            td {
-              padding: $smPadding;
-            }
-          }
-        } 
+        @include boxedTable();
       }
     }
   }
