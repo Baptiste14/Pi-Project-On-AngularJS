@@ -2,7 +2,7 @@
     <div class="music">
         <div class="panel-heading">
             <p>
-                {{item.title}}
+                <a href="/#/musics/{{item.title}}">{{item.title}}</a>
             </p>
         </div>
         <div class="panel-body">
@@ -35,11 +35,6 @@
         </div>
         <div class="panel-footer">
             {{item.year}}
-            <a href="/#/musics/{{item.title}}">
-                <button class="btn btn-default pull-right">
-                    <span class="fa fa-edit"></span>
-                </button>
-            </a>
         </div>
     </div>
 </div>

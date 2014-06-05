@@ -19,7 +19,11 @@ angular
         })
         .when('/movie/:title', {
             templateUrl: 'views/movie.html',
-            controller: 'MainCtrl'
+            controller: 'MusicCtrl'
+        })
+        .when('/musics/:title', {
+            templateUrl: 'views/music.html',
+            controller: 'MusicCtrl'
         })
         .when('/musics', {
             templateUrl: 'views/musics.html',

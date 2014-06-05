@@ -1,6 +1,5 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
-
 @import "standards/colors";
 @import "standards/mixins";
 @import "standards/fonts";
@@ -13,10 +12,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // endbower
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 body {
@@ -28,28 +27,28 @@ body {
 .header {
   @include boxed($mdRadius, $deepBlue, $lightBlue);
   height: $xsHeight;
-  color:$lightGrey;
+  color: $lightGrey;
   padding-left: $mdPadding;
   padding-right: $mdPadding;
 
   li {
     a:hover {
       cursor: pointer;
-      color:$deepBlue;
+      color: $deepBlue;
       @include grad($lightGrey, $vlightGrey);
     }
     a {
-      color:$vlightGrey;
+      color: $vlightGrey;
     }
     .dropdown {
-        a:hover {
-          cursor: pointer;
-          color:$deepBlue;
-          @include grad($lightGrey, $vlightGrey);
-        }
-        a {
-          color:$vlightGrey;
-        }
+      a:hover {
+        cursor: pointer;
+        color: $deepBlue;
+        @include grad($lightGrey, $vlightGrey);
+      }
+      a {
+        color: $vlightGrey;
+      }
       .dropdown-menu {
         @include grad($vlightGrey, $lightGrey);
         li {
@@ -58,20 +57,31 @@ body {
             background: inherit;
             color: $darkGrey;
           }
-          a:hover{
+          a:hover {
             color: $deepBlue;
           }
         }
       }
     }
+    .open {
+      background-color: $darkGrey;
 
+      a {
+        background: white;
+        color: $deepBlue;
+      }
+      a:hover {
+        background: white;
+        color: $lightBlue;
+      }
+    }
   }
 
-  li.active a{
+  li.active a {
     @include grad($lightBlue, $blue);
   }
 
-  li.active a:hover{
+  li.active a:hover {
     @include grad($vlightGrey, $lightGrey);
   }
 
@@ -83,21 +93,7 @@ body {
   }
 }
 
-.open{
-  background-color: $darkGrey;
-}
-.open {
-  a {
-  background: white;
-    color: $deepBlue;
-  }
-  a:hover {
-    background: white;
-    color: $lightBlue;
-  }
-}
-
-.content{
+.content {
   @include boxed($mdRadius, $lightGrey, $vlightGrey);
   margin-top: $mdMargin;
   margin-bottom: $mdMargin;
@@ -112,7 +108,10 @@ body {
 
   .panel {
     .panel-heading {
-      font-size: 1.2em;;
+      font-size: 1.2em;
+      a {
+        color: inherit;
+      }
     }
 
     .panel-footer {
@@ -122,10 +121,6 @@ body {
       .panel-heading {
         @include grad($deepBlue, $lightBlue);
         color: $vlightGrey;
-
-        a {
-          color: inherit;
-        }
       }
 
       .panel-body {
@@ -133,7 +128,7 @@ body {
       }
     }
 
-    .music{
+    .music {
       .panel-heading {
         @include grad($lightBlue, $vlightGrey);
       }
@@ -149,20 +144,19 @@ body {
 .footer {
   @include boxed($mdRadius, $deepBlue, $lightBlue);
   height: $xsHeight;
-  color:$lightGrey;
+  color: $lightGrey;
   padding-top: $lgPadding;
   padding-left: $mdPadding;
   padding-right: $mdPadding;
 }
 
-
 .input-group-addon {
-  min-width:75px;
-  text-align:center;
+  min-width: 75px;
+  text-align: center;
   @include grad($deepBlue, $lightBlue);
-  color:$vlightGrey
+  color: $vlightGrey
 }
 
-.input-group{
+.input-group {
   @include shadowed();
 }
