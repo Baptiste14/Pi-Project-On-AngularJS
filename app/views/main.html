@@ -5,8 +5,8 @@
             <h2>Recent Additions</h2>
             <div ng-repeat="item in items | orderBy : 'year' : true">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <music-display ng-if="item.type == 'Music'"></music-display>
-                    <movie-display ng-if="item.type == 'Movie'"></movie-display>
+                    <album-display ng-if="item.type == 'Music' && $index < 30"></album-display>
+                    <movie-display ng-if="item.type == 'Movie' && $index < 30"></movie-display>
                 </div>
                 <div class="clearfix" ng-if="$index % 4 == 3"></div>
             </div>
