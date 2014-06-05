@@ -1,6 +1,6 @@
 'use strict';
-//var url = 'http://pibaptiste.no-ip.biz/piproject/app/db.json';
-var url = './db.json';
+var distant_url = 'http://oenologie.epf.fr/RpiProject/db.json';
+var local_url = './db.json';
 
 
 angular.module('responsiveApp')
@@ -9,13 +9,9 @@ angular.module('responsiveApp')
 
         $scope.location = $location.path();
 
-        $scope.items =
-        [
-                {title: "1", author: "2", year: "1989", type: "movie"},
-                {title: "2", author: "3", year: "1994", type: "movie"},
-                {title: "7", author: "2", year: "1993", type: "music"},
-                {title: "8", author: "3", year: "1994", type: "music"}
-        ];
+        $scope.items = [];
+        $scope.albums = [];
+
 
         $scope.addContent = function() {
             console.log("--> Adding content");
@@ -44,13 +40,23 @@ angular.module('responsiveApp')
             $scope.items.splice(index, 1);
         }
 
-        $http({method: 'GET', url: url})
-           .success(function(data){
-               $scope.items = data.items;
-               console.log(data);
+        $http.get(distant_url)
+           .success(function(data) {
+                $scope.items = data.items;
+                console.log("Managed to get the items from distant URL");
            })
            .error(function(data) {
-                console.log("Get method Failed");
-           });
-
+                console.log("Failed to get the items from URL. Using Local JSON");
+                $http.get(local_url)
+                   .success(function(data) {
+                        $scope.items = data.items;
+                        console.log("Managed to get the items from local URL");
+                   })
+                   .error(function(data) {
+                        console.log("Failed to get the items. Fatal.");
+                   }); 
+           }); 
     });
+
+
+
