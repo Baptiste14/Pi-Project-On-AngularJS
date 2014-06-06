@@ -1,16 +1,32 @@
 <div class="header">
-    <ul class="nav nav-pills pull-right">
-        <li ng-class="{active:location == '/'}"><a ng-href="#">Home</a></li>
-        <li ng-class="{active:location == '/musics'}"><a ng-href="/#/musics">Musics</a></li>
-        <li ng-class="{active:location == '/movies'}"><a ng-href="/#/movies">Movies</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">Add content</a>
-          <ul class="dropdown-menu">
-            <li><a href="/#/Upload_movie">Movie<span class="badge">0</span></a></li>
-            <li><a href="/#/Upload_music">Music <span class="badge">0</span></a></li>
-          </ul>
-        </li>
-    </ul>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <h1>
+                <a ng-href="/">
+                    <img src="/res/drawable/Rpi.png" width="40" height="40" />
+                </a>
+                Π Project
 
-    <h1 class="text-muted"><img src="/res/drawable/Rpi.png" width="25" height="25" /> Pi Project</h1>
+            </h1>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            <ul class="nav nav-pills pull-right">
+                <li ng-class="{active:location == '/musics'}"><a ng-href="/#/musics">Musics</a></li>
+                <li ng-class="{active:location == '/movies'}"><a ng-href="/#/movies">Movies</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Add content</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/#/Upload_movie">Movie<span class="badge">0</span></a></li>
+                        <li><a href="/#/Upload_music">Music <span class="badge">0</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <button ng-click="show = !show" class="btn btn-default col-xs-1 col-xs-push-1 glyphicon glyphicon-search"/>
+        <div ng-show="show" class="col-xs-9 col-xs-push-1">
+            <input type="text" class="form-control" id="search" ng-model = "$parent.search">
+        </div>
+    </div>
 </div>

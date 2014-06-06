@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h2>Recent Additions</h2>
-            <div ng-repeat="item in items | filter : {type : 'movie'} | orderBy : 'year' : reverse">
+            <div ng-repeat="item in items | filter : {type : 'movie'} | filter : search | orderBy : 'year' : reverse">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <movie-display ></movie-display>
                     <div class="clearfix" ng-if="$index%4 == 3"></div>
