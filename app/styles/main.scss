@@ -26,10 +26,10 @@ body {
 
 .header {
   @include boxed($mdRadius, $deepBlue, $lightBlue);
-  height: $xsHeight;
   color: $lightGrey;
   padding-left: $mdPadding;
   padding-right: $mdPadding;
+  padding-bottom: $mdPadding;
 
   li {
     a:hover {
