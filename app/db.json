@@ -42,7 +42,7 @@
                 }
             ],
             "year":"2010",
-            "length":"186",
+            "link":"",
             "type":"Movie"
         },
         {
@@ -59,6 +59,7 @@
                 }
             ],
             "year":"2008",
+            "link":"./Library/3.mp4",
             "type":"Movie"
         },
         {
@@ -70,7 +71,7 @@
                 {
                     "title":"Take my Breath Away",
                     "track":"1",
-                    "link":"./Library/Gui Boratto/01 - Gui Boratto - Take My Breath Away.mp3"
+                    "link":"./Library/1.mp3"
                 },
                 {
                     "title":"Atomic Soda",

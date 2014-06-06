@@ -30,6 +30,7 @@ angular.module('responsiveApp')
                             if (item.title == $routeParams.title) {
                                 $scope.item = item;
                             }
+                            console.log(item.link);
                         });
                     })
                     .error(function(data) {

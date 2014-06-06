@@ -2,34 +2,28 @@
 <div class="content">
     <h2>{{item.title}}</h2>
     <div class="row">
-        <div class="col-xs-12">
-            <video width="100%" height="60%" controls>
-                <source src="{{item.link}}" type="video/mp4">
-                <source src="{{item.link}}" type="video/ogg">
-                <source src="{{item.link}}" type="video/webm">
-                <object data="{{item.link}}" width="100%" height="60%">
-                    <embed src="{{item.link}}" width="100%" height="60%">
-                </object>
-            </video>
+        <div class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-1">
+            <video height="50%" ng-src="{{item.link}}" controls></video>
         </div>
+        <table class="col-xs-10 col-xs-push-1 col-md-5">
+            <tr>
+                <td>
+                    Realisator
+                </td>
+                <td>
+                    {{item.realisator}}
+                </td>
+            </tr>
+            <tr ng-repeat="actor in item.actors">
+                <td>
+                    {{actor.role}}
+                </td>
+                <td>
+                    {{actor.name}}
+                </td>
+            </tr>
+        </table>
     </div>
-    <table>
-        <tr>
-            <td>
-                Realisator
-            </td>
-            <td>
-                {{item.realisator}}
-            </td>
-        </tr>
-        <tr ng-repeat="actor in item.actors">
-            <td>
-                {{actor.role}}
-            </td>
-            <td>
-                {{actor.name}}
-            </td>
-        </tr>
-    </table>
+
 </div>
 <ng-include src="'views/footer.html'"></ng-include>
