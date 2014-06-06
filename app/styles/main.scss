@@ -31,6 +31,9 @@ body {
   padding-right: $mdPadding;
   padding-bottom: $mdPadding;
 
+  a{
+    color: inherit;
+  }
   li {
     a:hover {
       cursor: pointer;
@@ -85,12 +88,7 @@ body {
     @include grad($vlightGrey, $lightGrey);
   }
 
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+
 }
 
 .content {
