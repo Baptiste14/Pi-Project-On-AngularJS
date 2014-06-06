@@ -1,7 +1,7 @@
 'use strict';
+
 var distant_url = 'http://oenologie.epf.fr/RpiProject/db.json';
 var local_url = './db.json';
-
 
 angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
@@ -12,25 +12,38 @@ angular.module('responsiveApp')
         $scope.items = [];
         $scope.albums = [];
 
-
         $scope.addContent = function() {
-            console.log("--> Adding content");
-            var newPost = {
-                title: $scope.newTitle, 
-                author: $scope.newAuthor, 
-                year: $scope.newYear, 
-                type: $scope.newType, 
-                track: $scope.newTrack
-            };
+            console.log("--> Adding content")
+            var newPost =null;
+            $.ajax({
+                url: "http://imdb.wemakesites.net/api/1.0/get/title/",
+                data: {
+                    q: $scope.title
+                },
+                crossDomain: true,
+                success: function(data) {
+                    newPost = data.data,
+                    newPost.postDate = new Date(),
+                    newPost.link = $scope.link,
+                    console.log(newPost)
+                },
+                error: function(){
+                    console.log("Error while getting back IMDB infos");
+                }
+            });
 
-            $scope.items.push(newPost);
-            //$http.post(url_movies, newPost);
 
-            $scope.newTitle = null;
-            $scope.newAuthor = null;
-            $scope.newYear=null;
-            $scope.newTrack=null;
-            $scope.newType=null;
+            $scope.items.push(JSON.stringify(newPost));
+            $http.post(distant_url, JSON.stringify(newPost))
+            .error(function(){
+                $http.post(local_url, JSON.stringify(newPost))
+                .error(function(){
+                    console.log("Error while posting the item")
+                })
+            });
+
+            $scope.title = null;
+            $scope.link = null;
 
             $location.path("/");
         };
@@ -55,7 +68,7 @@ angular.module('responsiveApp')
                    .error(function(data) {
                         console.log("Failed to get the items. Fatal.");
                    }); 
-           }); 
+            });
     });
 
 
