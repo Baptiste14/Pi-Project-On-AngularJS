@@ -27,7 +27,7 @@ body {
 .header {
   @include boxed($mdRadius, $deepBlue, $lightBlue);
   color: $lightGrey;
-  padding-left: $mdPadding;
+  padding-left: $smPadding;
   padding-right: $mdPadding;
   padding-bottom: $mdPadding;
 
