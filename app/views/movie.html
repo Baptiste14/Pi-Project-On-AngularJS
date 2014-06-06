@@ -3,23 +3,35 @@
     <h2>{{item.title}}</h2>
     <div class="row">
         <div class="col-xs-10 col-xs-push-1 col-lg-5">
-            <video height="50%" ng-src="{{item.link}}" controls></video>
+            <video height="50%" ng-src="{{item.link}}"  controls></video>
         </div>
         <table class="col-xs-10 col-xs-push-1 col-lg-5">
             <tr>
                 <td>
-                    Realisator
+                    <strong>Realisator</strong>
                 </td>
                 <td>
                     {{item.realisator}}
                 </td>
             </tr>
-            <tr ng-repeat="actor in item.actors">
+            <tr >
                 <td>
-                    {{actor.role}}
+                    <strong>Casting</strong>
                 </td>
                 <td>
-                    {{actor.name}}
+                    <span ng-repeat="actor in item.actors">
+                        <span ng-if="$index > 0">, </span>{{actor.name}}
+                    </span>
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <strong>Synopsis</strong>
+                </td>
+                <td>
+                    Synopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis Synopsis
+                    Synopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis Synopsis
+                    Synopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis Synopsis
                 </td>
             </tr>
         </table>
