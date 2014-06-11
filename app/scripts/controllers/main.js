@@ -54,6 +54,7 @@ angular.module('responsiveApp')
             $http.get(local_url)
                 .success(function(data) {
                     $scope.items = data.items;
+                    localStorage.setItem('items', JSON.stringify($data.items));
                     console.log("Managed to get the items from distant URL.");
                 })
                 .error(function(data) {
