@@ -30,6 +30,7 @@ angular.module('responsiveApp')
                     $scope.items.push(newPost);
                     console.log("Added movie : " + newPost.title);
                     localStorage.setItem('items', JSON.stringify($scope.items));
+                    console.log(JSON.stringify($scope.items));
                 },
                 error: function(){
                     console.log("Failed getting back IMDB infos on Movie");
@@ -61,6 +62,7 @@ angular.module('responsiveApp')
                     console.log("Failed to get the items. Fatal.");
                 }).then(function(){
                    first = 1;
+
                 });
         }
         else {
