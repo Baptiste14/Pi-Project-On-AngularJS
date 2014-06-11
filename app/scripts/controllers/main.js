@@ -2,19 +2,18 @@
 
 var distant_url = 'http://oenologie.epf.fr/RpiProject/db.json';
 var local_url = './db.json';
+var first = 0;
 
 angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
         $scope.location = null;
 
         $scope.location = $location.path();
-
         $scope.items = [];
-        $scope.albums = [];
 
         $scope.addContent = function() {
-            console.log("--> Adding content")
             var newPost =null;
+
             $.ajax({
                 url: "http://imdb.wemakesites.net/api/1.0/get/title/",
                 data: {
@@ -22,10 +21,9 @@ angular.module('responsiveApp')
                 },
                 crossDomain: true,
                 success: function(data) {
-                    //newPost = data.data,
+                    newPost = data.data,
                     newPost.postDate = new Date(),
-                    newPost.link = $scope.link,
-                    console.log(newPost)
+                    newPost.link = $scope.link
                 },
                 error: function(){
                     console.log("Error while getting back IMDB infos");
@@ -33,15 +31,7 @@ angular.module('responsiveApp')
             });
 
             $scope.items.push(JSON.stringify(newPost));
-            localStorage.setItem('data',JSON.stringify($scope.items));
-            console.log(JSON.parse(localStorage.getItem('data')));
-            $http.post(distant_url, JSON.stringify(newPost))
-            .error(function(){
-                $http.post(local_url, JSON.stringify(newPost))
-                .error(function(){
-                    console.log("Error while posting the item")
-                })
-            });
+            localStorage.setItem('items',JSON.stringify($scope.items));
 
             $scope.title = null;
             $scope.link = null;
@@ -54,22 +44,30 @@ angular.module('responsiveApp')
             $scope.items.splice(index, 1);
         }
 
-        $http.get(distant_url)
-           .success(function(data) {
-                $scope.items = data.items;
-                console.log("Managed to get the items from distant URL.");
-           })
-           .error(function(data) {
-                console.log("Failed to get the items from distant URL. Using Local JSON.");
-                $http.get(local_url)
-                   .success(function(data) {
-                        $scope.items = data.items;
-                        console.log("Managed to get the items from local URL.");
-                   })
-                   .error(function(data) {
-                        console.log("Failed to get the items. Fatal.");
-                   }); 
-            });
+        if (first == 0 ) {
+            $http.get(distant_url)
+                .success(function(data) {
+                    $scope.items = data.items;
+                    console.log("Managed to get the items from distant URL.");
+                })
+                .error(function(data) {
+                    console.log("Failed to get the items from distant URL. Using Local JSON.");
+                    $http.get(local_url)
+                        .success(function(data) {
+                            $scope.items = data.items;
+                            console.log("Managed to get the items from local URL.");
+                        })
+                        .error(function(data) {
+                            console.log("Failed to get the items. Fatal.");
+                        });
+                })
+                .then(function(){
+                    first = 1;
+                });
+        }
+        else {
+            $scope.items = localStorage.getItem('items');
+        }
     });
 
 
