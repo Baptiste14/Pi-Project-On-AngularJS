@@ -212,6 +212,26 @@
             "postDate":"2014-06-11T09:05:02.706Z",
             "link":null,
             "type":"Movie"
+        },
+        {
+            "imdbEndPoint":"http://www.imdb.com",
+            "imdbId":"tt0360717",
+            "title":"King Kong",
+            "year":"2005",
+            "rating":"7.3",
+            "description":"In+1933+New+York%2C+an+overly+ambitious+movie+producer+coerces+his+cast+and+hired+ship+crew+to+travel+to+mysterious+Skull+Island%2C+where+they+encounter+Kong%2C+a+giant+ape+who+is+immediately+smitten+with+leading+lady+Ann+Darrow.",
+            "cast":["Naomi Watts", "Jack Black", "Adrien Brody", "Thomas Kretschmann", "Colin Hanks", "Andy Serkis", "Evan Parke", "Jamie Bell", "Lobo Chan", "John Sumner", "Craig Hall", "Kyle Chandler", "William Johnson", "Mark Hadlow", "Geraldine Brophy"],
+            "imdbUrl":"/title/tt0360717/?ref_=fn_tt_tt_1",
+            "country":"Official Facebook",
+            "releaseDate":"2005-12-14",
+            "directors":["Peter Jackson"],
+            "writers":["Fran Walsh", "Philippa Boyens"],
+            "genres":["Action", "Adventure", "Drama"],
+            "poster":"http://imdb.wemakesites.net/api/1.0/img/?url=http://ia.media-imdb.com/image…gzODQwNjAwOV5BMl5BanBnXkFtZTcwMDA4MDA0MQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+            "runningTime":"187 min",
+            "postDate":"2014-06-11T09:40:15.877Z",
+            "link":"http://www12.uptobox.com/d/vuyy5a42fkr76xkqyeumkv3gmzmu64pzezwce5fvqfnvbtegvd32nbsa/Major.Crimes.S03E01.FASTSUB.VOSTFR.HDTV.x264-ADDiCTiON.mp4",
+            "type":"Movie"
         }
     ]
 }

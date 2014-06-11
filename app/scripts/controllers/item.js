@@ -14,7 +14,9 @@ angular.module('responsiveApp')
             $scope.items.forEach(function(item) {
                 if (item.title == $routeParams.title) {
                     $scope.item = item;
-                    $scope.item.description = item.description.split('+').join(' ').split('%2C').join(', ');
+                    if (item.type == "Movie") {
+                        $scope.item.description = item.description.split('+').join(' ').split('%2C').join(', ');
+                    }
                 }
             });
     });
