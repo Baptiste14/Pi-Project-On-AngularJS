@@ -19,6 +19,7 @@ angular.module('responsiveApp')
                 data: {
                     q: $scope.title
                 },
+                dataType : "jsonp",
                 crossDomain: true,
                 success: function(data) {
                     newPost = data.data,
@@ -31,6 +32,7 @@ angular.module('responsiveApp')
             });
 
             $scope.items.push(JSON.stringify(newPost));
+
             localStorage.setItem('items',JSON.stringify($scope.items));
 
             $scope.title = null;
