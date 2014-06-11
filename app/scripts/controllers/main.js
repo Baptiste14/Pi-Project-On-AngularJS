@@ -22,7 +22,7 @@ angular.module('responsiveApp')
                 },
                 crossDomain: true,
                 success: function(data) {
-                    newPost = data.data,
+                    //newPost = data.data,
                     newPost.postDate = new Date(),
                     newPost.link = $scope.link,
                     console.log(newPost)
@@ -32,8 +32,9 @@ angular.module('responsiveApp')
                 }
             });
 
-
             $scope.items.push(JSON.stringify(newPost));
+            localStorage.setItem('data',JSON.stringify($scope.items));
+            console.log(JSON.parse(localStorage.getItem('data')));
             $http.post(distant_url, JSON.stringify(newPost))
             .error(function(){
                 $http.post(local_url, JSON.stringify(newPost))
