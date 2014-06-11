@@ -12,7 +12,7 @@ angular.module('responsiveApp')
         $scope.items = [];
         $scope.albums = [];
 
-        $scope.addContent = function() {
+        $scope.addMovie = function() {
             console.log("--> Adding content")
             var newPost =null;
             $.ajax({
@@ -26,16 +26,18 @@ angular.module('responsiveApp')
                     newPost = data.data,
                     newPost.postDate = new Date(),
                     newPost.link = $scope.link,
+                    newPost.type = "Movie",
                     console.log(newPost)
+
+                    $scope.items.push(JSON.stringify(newPost));
+                    localStorage.setItem('items',JSON.stringify($scope.items));
+                    console.log(localStorage.getItem('items'));
                 },
                 error: function(){
                     console.log("Error while getting back IMDB infos");
                 }
             });
-
-            $scope.items.push(JSON.stringify(newPost));
-            localStorage.setItem('data',JSON.stringify($scope.items));
-            console.log(JSON.parse(localStorage.getItem('data')));
+            
             $http.post(distant_url, JSON.stringify(newPost))
             .error(function(){
                 console.log("Error while posting the item to a distant url")
