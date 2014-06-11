@@ -20,9 +20,10 @@ angular.module('responsiveApp')
                 data: {
                     q: $scope.title
                 },
+                dataType : "jsonp",
                 crossDomain: true,
                 success: function(data) {
-                    //newPost = data.data,
+                    newPost = data.data,
                     newPost.postDate = new Date(),
                     newPost.link = $scope.link,
                     console.log(newPost)
@@ -37,9 +38,10 @@ angular.module('responsiveApp')
             console.log(JSON.parse(localStorage.getItem('data')));
             $http.post(distant_url, JSON.stringify(newPost))
             .error(function(){
+                console.log("Error while posting the item to a distant url")
                 $http.post(local_url, JSON.stringify(newPost))
                 .error(function(){
-                    console.log("Error while posting the item")
+                    console.log("Error while posting the item to a local url")
                 })
             });
 
