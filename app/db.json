@@ -29,9 +29,10 @@
     },
     "items":[
            {
-            "title":"Jours étranges",
-            "artist":"Saez",
+            "title":"Oracular Spectacular",
+            "artist":"MGMT",
             "year":"1999",
+            "type":"Music",
             "musics":[
                 {
                     "title":"Time to pretend",
@@ -83,9 +84,8 @@
                     "track":"10",
                     "link":"http://pibaptiste.no-ip.biz/music/MGMT/10-mgmt-future_reflections-prv.mp3"
                 }
-            ],
-            "type":"Music"
-        },       
+            ]
+           },
         {
             "title":"Jours étranges",
             "artist":"Saez",
