@@ -29,40 +29,6 @@
     },
     "items":[
         {
-            "title":"Lord of war",
-            "realisator":"Toto",
-            "actors":[
-                {
-                    "name":"Jack",
-                    "role":"Lead"
-                },
-                {
-                    "name":"Jean",
-                    "role":"Antagonist"
-                }
-            ],
-            "year":"2010",
-            "link":"",
-            "type":"Movie"
-        },
-        {
-            "title":"Les cancres",
-            "realisator":"Jack X",
-            "actors":[
-                {
-                    "name":"Jack X",
-                    "role":"Lead"
-                },
-                {
-                    "name":"John Lennon",
-                    "role":"Second Role"
-                }
-            ],
-            "year":"2008",
-            "link":"./Library/3.mp4",
-            "type":"Movie"
-        },
-        {
             "title":"Take My Breath Away",
             "artist":"Gui Boratto",
             "album":"Take My Breath Away",
@@ -186,6 +152,86 @@
                 }
             ],
             "type":"Music"
+        },
+        {
+            "imdbEndPoint":"http://www.imdb.com",
+            "imdbId":"tt0399295",
+            "title":"Lord of War",
+            "year":"2005",
+            "rating":"7.6",
+            "description":"An+arms+dealer+confronts+the+morality+of+his+work+as+he+is+being+chased+by+an+Interpol+agent.",
+            "cast":["Nicolas Cage", "Bridget Moynahan", "Jared Leto", "Shake Tukhmanyan", "Jean-Pierre Nshanian", "Jared Burke", "Eric Uys", "David Shumbris", "Stewart Morgan", "Jasper Lenz", "Stephen Gregor", "Kobus Marx", "Stephan De Abreu", "Jeremy Crutchley", "Ian Holm"],
+            "imdbUrl":"/title/tt0399295/?ref_=fn_tt_tt_1",
+            "country":"Lions Gate Films [United States]",
+            "releaseDate":"2005-11-18",
+            "directors":["Andrew Niccol"],
+            "writers":["Andrew Niccol"],
+            "genres":["Crime", "Drama", "Thriller"],
+            "poster":"http://imdb.wemakesites.net/api/1.0/img/?url=http://ia.media-imdb.com/images/M/MV5BMjEzNDM2OTgzN15BMl5BanBnXkFtZTcwMzU3MTIzMQ@@._V1_SX214_AL_.jpg",
+            "runningTime":"122 min",
+            "postDate":"2014-06-11T08:55:35.626Z",
+            "link":null,
+            "type":"Movie"
+        },
+        {
+            "imdbEndPoint":"http://www.imdb.com",
+            "imdbId":"tt1119646",
+            "title":"The Hangover",
+            "year":"2009",
+            "rating":"7.8",
+            "description":"Three+buddies+wake+up+from+a+bachelor+party+in+Las+Vegas%2C+with+no+memory+of+the+previous+night+and+the+bachelor+missing.+They+make+their+way+around+the+city+in+order+to+find+their+friend+before+his+wedding.",
+            "cast":["Bradley Cooper", "Ed Helms", "Zach Galifianakis", "Justin Bartha", "Heather Graham", "Sasha Barrese", "Jeffrey Tambor", "Ken Jeong", "Rachael Harris", "Mike Tyson", "Mike Epps", "Jernard Burks", "Rob Riggle", "Cleo King", "Bryan Callen"],
+            "imdbUrl":"/title/tt1119646/?ref_=fn_tt_tt_1",
+            "country":"Official Facebook",
+            "releaseDate":"2009-06-19",
+            "directors":["Todd Phillips"],
+            "writers":["Jon Lucas", "Scott Moore"],
+            "genres":["Comedy"],
+            "poster":"http://imdb.wemakesites.net/api/1.0/img/?url=http://ia.media-imdb.com/images/M/MV5BMTU1MDA1MTYwMF5BMl5BanBnXkFtZTcwMDcxMzA1Mg@@._V1_SX214_AL_.jpg",
+            "runningTime":"100 min",
+            "postDate":"2014-06-11T09:03:53.428Z",
+            "link":null,
+            "type":"Movie"
+        },
+        {
+            "imdbEndPoint":"http://www.imdb.com",
+            "imdbId":"tt1219289",
+            "title":"Limitless",
+            "year":"2011",
+            "rating":"7.4",
+            "description":"With+the+help+of+a+mysterious+pill+that+enables+the+user+to+access+100+percent+of+his+brain+abilities%2C+a+struggling+writer+becomes+a+financial+wizard%2C+but+it+also+puts+him+in+a+new+world+with+lots+of+dangers.",
+            "cast":["Bradley Cooper", "Robert De Niro", "Abbie Cornish", "Andrew Howard", "Anna Friel", "Johnny Whitworth", "Tomas Arana", "Robert John Burke", "Darren Goldstein", "Ned Eisenberg", "T.V. Carpio", "Richard Bekins", "Patricia Kalember", "Cindy Katz", "Brian Anthony Wilson"],
+            "imdbUrl":"/title/tt1219289/?ref_=fn_tt_tt_1",
+            "country":"Official site",
+            "releaseDate":"2011-03-25",
+            "directors":["Neil Burger"],
+            "writers":["Leslie Dixon", "Alan Glynn"],
+            "genres":["Mystery", "Sci-Fi", "Thriller"],
+            "poster":"http://imdb.wemakesites.net/api/1.0/img/?url=http://ia.media-imdb.com/image…Y3NjczNzc5Nl5BMl5BanBnXkFtZTcwMzA2MzQyNA@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+            "runningTime":"105 min",
+            "postDate":"2014-06-11T09:05:02.706Z",
+            "link":null,
+            "type":"Movie"
+        },
+        {
+            "imdbEndPoint":"http://www.imdb.com",
+            "imdbId":"tt0360717",
+            "title":"King Kong",
+            "year":"2005",
+            "rating":"7.3",
+            "description":"In+1933+New+York%2C+an+overly+ambitious+movie+producer+coerces+his+cast+and+hired+ship+crew+to+travel+to+mysterious+Skull+Island%2C+where+they+encounter+Kong%2C+a+giant+ape+who+is+immediately+smitten+with+leading+lady+Ann+Darrow.",
+            "cast":["Naomi Watts", "Jack Black", "Adrien Brody", "Thomas Kretschmann", "Colin Hanks", "Andy Serkis", "Evan Parke", "Jamie Bell", "Lobo Chan", "John Sumner", "Craig Hall", "Kyle Chandler", "William Johnson", "Mark Hadlow", "Geraldine Brophy"],
+            "imdbUrl":"/title/tt0360717/?ref_=fn_tt_tt_1",
+            "country":"Official Facebook",
+            "releaseDate":"2005-12-14",
+            "directors":["Peter Jackson"],
+            "writers":["Fran Walsh", "Philippa Boyens"],
+            "genres":["Action", "Adventure", "Drama"],
+            "poster":"http://imdb.wemakesites.net/api/1.0/img/?url=http://ia.media-imdb.com/image…gzODQwNjAwOV5BMl5BanBnXkFtZTcwMDA4MDA0MQ@@._V1_SY317_CR0,0,214,317_AL_.jpg",
+            "runningTime":"187 min",
+            "postDate":"2014-06-11T09:40:15.877Z",
+            "link":"http://www12.uptobox.com/d/vuyy5a42fkr76xkqyeumkv3gmzmu64pzezwce5fvqfnvbtegvd32nbsa/Major.Crimes.S03E01.FASTSUB.VOSTFR.HDTV.x264-ADDiCTiON.mp4",
+            "type":"Movie"
         }
     ]
 }

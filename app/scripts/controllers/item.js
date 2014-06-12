@@ -8,39 +8,17 @@ angular.module('responsiveApp')
 
         console.log($routeParams.title);
 
-        $http.get(distant_url)
-            .success(function(data) {
-                $scope.items = data.items;
-                console.log("Managed to get the items from distant URL.");
+        console.log("Loading Data from LocalStorage.");
+        $scope.items = JSON.parse(localStorage.getItem('items'));
 
-                $scope.items.forEach(function(item) {
-                    if (item.title == $routeParams.title) {
-                        $scope.item = item;
+            $scope.items.forEach(function(item) {
+                if (item.title == $routeParams.title) {
+                    $scope.item = item;
+                    if (item.type == "Movie") {
+                        $scope.item.description = item.description.split('+').join(' ').split('%2C').join(', ');
                     }
-                });
-            })
-            .error(function(data) {
-                console.log("Failed to get the items from distant URL. Using Local JSON.");
-                $http.get(local_url)
-                    .success(function(data) {
-                        $scope.items = data.items;
-                        console.log("Managed to get the items from local URL.");
-
-                        $scope.items.forEach(function(item) {
-                            if (item.title == $routeParams.title) {
-                                $scope.item = item;
-                            }
-                            console.log(item.link);
-                        });
-                    })
-                    .error(function(data) {
-                        console.log("Failed to get the items. Fatal.");
-                    });
+                }
             });
-
-
-
-
     });
 
 

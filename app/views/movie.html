@@ -8,10 +8,14 @@
         <table class="col-xs-10 col-xs-push-1 col-lg-5">
             <tr>
                 <td>
-                    <strong>Realisator</strong>
+                    <strong>
+                        Director<span ng-repeat="director in item.directors"><span ng-if="$index == 1">s</span></span>
+                    </strong>
                 </td>
                 <td>
-                    {{item.realisator}}
+                    <span ng-repeat="director in item.directors">
+                        <span ng-if="$index > 0">, </span>{{director}}
+                    </span>
                 </td>
             </tr>
             <tr >
@@ -19,8 +23,8 @@
                     <strong>Casting</strong>
                 </td>
                 <td>
-                    <span ng-repeat="actor in item.actors">
-                        <span ng-if="$index > 0">, </span>{{actor.name}}
+                    <span ng-repeat="cast in item.cast" ng-if="$index < 3">
+                        <span ng-if="$index > 0">, </span>{{cast}} <span ng-if="$index == 2">, etc.</span>
                     </span>
                 </td>
             </tr>
@@ -29,9 +33,7 @@
                     <strong>Synopsis</strong>
                 </td>
                 <td>
-                    Synopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis Synopsis
-                    Synopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis Synopsis
-                    Synopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis SynopsisSynopsis Synopsis
+                   {{item.description}}
                 </td>
             </tr>
         </table>
