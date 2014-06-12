@@ -118,6 +118,10 @@ body {
       @include grad(white, $vlightGrey);
     }
 
+    .panel-body {
+      height: $smHeight;
+    }
+
     .movie {
       .panel-heading {
         @include grad($deepBlue, $lightBlue);

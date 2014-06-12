@@ -33,6 +33,7 @@
             "artist":"MGMT",
             "year":"1999",
             "type":"Music",
+            "postDate":"2014-06-11T06:55:35.626Z",
             "musics":[
                 {
                     "title":"Time to pretend",
@@ -91,6 +92,7 @@
             "artist":"Saez",
             "year":"1999",
             "type":"Music",
+            "postDate":"2014-05-11T08:55:35.626Z",
             "musics":[
                 {
                     "title":"Jeune et con",
@@ -158,6 +160,8 @@
             "title":"Take My Breath Away",
             "artist":"Gui Boratto",
             "year":"2009",
+            "type":"Music",
+            "postDate":"2014-06-01T08:55:35.626Z",
             "musics":[
                 {
                     "title":"Take my Breath Away",
@@ -214,13 +218,14 @@
                     "track":"11",
                     "link":"http://pibaptiste.no-ip.biz/music/GB/Godet.mp3"
                 }
-            ],
-            "type":"Music"
+            ]
         },
         {
             "title":"Chromophobia",
             "artist":"Gui Boratto",
             "year":"2007",
+            "type":"Music",
+            "postDate":"2014-03-11T08:25:35.626Z",
             "musics":[
                 {
                     "title":"Scene 1",
@@ -274,8 +279,7 @@
                     "title":"The Verdict",
                     "track":"13"
                 }
-            ],
-            "type":"Music"
+            ]
         },
         {
             "imdbEndPoint":"http://www.imdb.com",
@@ -293,7 +297,7 @@
             "genres":["Crime", "Drama", "Thriller"],
             "poster":"./images/low.jpg",
             "runningTime":"122 min",
-            "postDate":"2014-06-11T08:55:35.626Z",
+            "postDate":"2014-06-11T06:55:35.626Z",
             "link":null,
             "type":"Movie"
         },
