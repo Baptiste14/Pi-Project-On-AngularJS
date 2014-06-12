@@ -6,26 +6,18 @@
 	        
 	        <form class="col-md-12 col-sm-12 cal-xs-12" ng-submit="addContent()">
 	        	<div class="input-group">
- 					<span class="input-group-addon">Title</span>
-  					<input type="text" class="form-control" placeholder="L'Art de la fugue" ng-model="titre"></input>
-				</div>
+                    <span class="input-group-addon">Title</span>
+                    <input type="text" class="form-control" placeholder="L'Art de la fugue" ng-model="titre"/>
+                    <span class="input-group-addon">Artist</span>
+                    <input type="text" class="form-control" placeholder="Jean-Sébastien Bach" ng-model="author"/>
+                </div>
 				<div class="input-group">
- 					<span class="input-group-addon">Author</span>
-  					<input type="text" class="form-control" placeholder="Jean-Sébastien Bach" ng-model="author"></input>
+                    <span class="input-group-addon">Year</span>
+                    <input type="number" class="form-control" placeholder="1750" ng-model="year"></input>
+                    <span class="input-group-addon">Tracks</span>
+                    <input type="number" class="form-control" placeholder="1" ng-model="track"></input>
 				</div>
-				<div class="input-group">
- 					<span class="input-group-addon">Year</span>
-  					<input type="number" class="form-control" placeholder="1750" ng-model="year"></input>
-				</div>
-				<div class="input-group">
- 					<span class="input-group-addon">Track</span>
-  					<input type="number" class="form-control" placeholder="1" ng-model="track"></input>
-				</div>
-				<div class="input-group">
- 					<span class="input-group-addon">Length</span>
-  					<input type="text" class="form-control" placeholder="3'45''" ng-model="length"></input>
-				</div><br><br>
-				<center><button type="submit" class="btn btn-default">Send</button></center>
+                <center><button type="submit" class="btn btn-default">Send</button></center>
 	        </form>
 	    </div>
 	</div>
