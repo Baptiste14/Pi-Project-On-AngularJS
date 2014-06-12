@@ -28,66 +28,189 @@
         }
     },
     "items":[
+           {
+            "title":"Jours étranges",
+            "artist":"Saez",
+            "year":"1999",
+            "musics":[
+                {
+                    "title":"Time to pretend",
+                    "track":"1",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/01-mgmt-time_to_pretend-prv.mp3"
+                },
+                {
+                    "title":"Weekend wars",
+                    "track":"2",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/02-mgmt-weekend_wars-prv.mp3"
+                },
+                {
+                    "title":"The youth",
+                    "track":"3",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/03-mgmt-the_youth-prv.mp3"
+                },
+                {
+                    "title":"Electric feel",
+                    "track":"4",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/04-mgmt-electric_feel-prv.mp3"
+                },
+                {
+                    "title":"Kids",
+                    "track":"5",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/05-mgmt-kids-prv.mp3"
+                },
+                {
+                    "title":"4th dimensional transition",
+                    "track":"6",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/06-mgmt-4th_dimensional_transition-prv.mp3"
+                },
+                {
+                    "title":"Pieces of what",
+                    "track":"7",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/07-mgmt-pieces_of_what-prv.mp3"
+                },
+                {
+                    "title":"Of moons birds and monsters",
+                    "track":"8",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/08-mgmt-of_moons_birds_and_monsters-prv.mp3"
+                },
+                {
+                    "title":"The handshake",
+                    "track":"9",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/09-mgmt-the_handshake-prv.mp3"
+                },
+                {
+                    "title":"Future reflections",
+                    "track":"10",
+                    "link":"http://pibaptiste.no-ip.biz/music/MGMT/10-mgmt-future_reflections-prv.mp3"
+                },
+            ]
+        }       
+        {
+            "title":"Jours étranges",
+            "artist":"Saez",
+            "year":"1999",
+            "musics":[
+                {
+                    "title":"Jeune et con",
+                    "track":"1",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/01-Jeune Et Con.mp3"
+                },
+                {
+                    "title":"Sauver cette étoile",
+                    "track":"2",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/02-Sauver Cette Etoile.mp3"
+                },
+                {
+                    "title":"Jours étranges",
+                    "track":"3",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/03-Jours Etranges.mp3"
+                },
+                {
+                    "title":"J'veux m'en aller",
+                    "track":"4",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/04-J'veux M'en Aller.mp3"
+                },
+                {
+                    "title":"Hallelujah",
+                    "track":"5",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/05-Hallelujah.mp3"
+                },
+                {
+                    "title":"Crepuscule",
+                    "track":"6",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/06-Crepuscule.mp3"
+                },
+                {
+                    "title":"Soleil 2000",
+                    "track":"7",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/07-Soleil 2000.mp3"
+                },
+                {
+                    "title":"Amandine Ii",
+                    "track":"8",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/08-Amandine Ii.mp3"
+                },
+                {
+                    "title":"Rock'n'roll Star",
+                    "track":"9",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/09-Rock'n'roll Star.mp3"
+                },
+                {
+                    "title":"My Funny Valentine",
+                    "track":"10",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/10-My Funny Valentine.mp3"
+                },
+                {
+                    "title":"Montee La-Haut",
+                    "track":"11",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/11-Montee La-Haut.mp3"
+                },
+                {
+                    "title":"Petit Prince",
+                    "track":"12",
+                    "link":"http://pibaptiste.no-ip.biz/music/SAEZ/12-Petit Prince.mp3"
+                },
+            ],
+        }
         {
             "title":"Take My Breath Away",
             "artist":"Gui Boratto",
-            "album":"Take My Breath Away",
             "year":"2009",
             "musics":[
                 {
                     "title":"Take my Breath Away",
                     "track":"1",
-                    "link":"./Library/1.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Take My Breath Away.mp3"
                 },
                 {
                     "title":"Atomic Soda",
                     "track":"2",
-                    "link":"./Library/Gui Boratto/02 - Gui Boratto - Atomic Soda.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Atomic Soda.mp3"
                 },
                 {
                     "title":"Colors",
                     "track":"3",
-                    "link":"./Library/Gui Boratto/03 - Gui Boratto - Colors.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Colors.mp3"
                 },
                 {
                     "title":"Opus 17",
                     "track":"4",
-                    "link":"./Library/Gui Boratto/04 - Gui Boratto - Opus 17.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Opus 17.mp3"
                 },
                 {
                     "title":"No Turning Back",
                     "track":"5",
-                    "link":"./Library/Gui Boratto/05 - Gui Boratto - No Turning Back.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/No Turning Back.mp3"
                 },
                 {
                     "title":"Azzura",
                     "track":"6",
-                    "link":"./Library/Gui Boratto/06 - Gui Boratto - Azurra.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Azurra.mp3"
                 },
                 {
                     "title":"Les Enfants",
                     "track":"7",
-                    "link":"./Library/Gui Boratto/07 - Gui Boratto - Les Enfants.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Les Enfants.mp3"
                 },
                 {
                     "title":"Besides",
                     "track":"8",
-                    "link":"./Library/Gui Boratto/08 - Gui Boratto - Besides.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Besides.mp3"
                 },
                 {
                     "title":"Ballroom",
                     "track":"9",
-                    "link":"./Library/Gui Boratto/09 - Gui Boratto - Ballroom.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Ballroom.mp3"
                 },
                 {
                     "title":"Eggplant",
                     "track":"10",
-                    "link":"./Library/Gui Boratto/10 - Gui Boratto - Eggplant.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Eggplant.mp3"
                 },
                 {
                     "title":"Godet",
                     "track":"11",
-                    "link":"./Library/Gui Boratto/11 - Gui Boratto - Godet.mp3"
+                    "link":"http://pibaptiste.no-ip.biz/music/GB/Godet.mp3"
                 }
             ],
             "type":"Music"
@@ -95,7 +218,6 @@
         {
             "title":"Chromophobia",
             "artist":"Gui Boratto",
-            "album":"Take My Breath Away",
             "year":"2007",
             "musics":[
                 {
