@@ -4,7 +4,6 @@ angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
         var local_url = './db.json';
 
-        $scope.location = null;
         $scope.location = $location.path();
         $scope.items = [];
 
@@ -21,60 +20,10 @@ angular.module('responsiveApp')
             ]
         };
 
-        $scope.addMovie = function () {
-            var newPost = null;
-            $.ajax({
-                url:"http://imdb.wemakesites.net/api/1.0/get/title/",
-                data:{
-                    q:$scope.title
-                },
-                dataType:"jsonp",
-                crossDomain:true,
-                success:function (data) {
-                    newPost = data.data;
-                    newPost.postDate = new Date();
-                    newPost.link = $scope.link;
-                    newPost.type = "Movie";
-
-                    $scope.items.push(newPost);
-                    console.log("Added movie : " + newPost.title);
-                    localStorage.setItem('items', JSON.stringify($scope.items));
-                    console.log(JSON.stringify($scope.items));
-                },
-                error:function () {
-                    console.log("Failed getting back IMDB infos on Movie");
-                }
-            });
-
-            $scope.title = null;
-            $scope.link = null;
-
-            $location.path("/Movies");
-        };
-        $scope.addMusic = function(){
-            console.log($scope.newAlbum.musics.length);
-            $scope.newAlbum.musics.push({
-                "title":"",
-                "track": $scope.newAlbum.musics.length + 1,
-                "link":""
-            });
-        };
-        $scope.addAlbum = function() {
-            $scope.newAlbum.postDate = new Date();
-            $scope.items.push($scope.newAlbum);
-            console.log("Added movie : " + JSON.stringify($scope.newAlbum));
-            localStorage.setItem('items', JSON.stringify($scope.items));
-            $location.path("/Musics");
-        };
-        $scope.removeMusic = function(index) {
-            $scope.newAlbum.musics.splice(index, 1);
-
-            $scope.newAlbum.musics.forEach(function (music) {
-                if (music.track > index){
-                    music.track -= 1;
-                }
-            });
-        };
+        $scope.addMovie         = function()        { addMovie( $scope, $location)   };
+        $scope.addMusicToAlbum  = function()        { addMusicToAlbum($scope)       };
+        $scope.removeMusic      = function(index)   { removeMusic($scope, index)    };
+        $scope.addAlbum         = function()        { addAlbum($scope, $location)   };
     });
 
 function getItems($scope, $http, local_url){
@@ -99,5 +48,58 @@ function getItems($scope, $http, local_url){
     }
 }
 
+function addMusicToAlbum($scope) {
+    console.log("Add track" + $scope.newAlbum.musics.length);
+    $scope.newAlbum.musics.push({
+        "title":"",
+        "track": $scope.newAlbum.musics.length + 1,
+        "link":""
+    });
+}
+
+function addAlbum($scope, $location) {
+    $scope.newAlbum.postDate = new Date();
+    $scope.items.push($scope.newAlbum);
+    localStorage.setItem('items', JSON.stringify($scope.items));
+    $location.path("/musics");
+}
+
+function addMovie($scope, $location) {
+    var newPost = null;
+    $.ajax({
+        url:"http://imdb.wemakesites.net/api/1.0/get/title/",
+        data:{
+            q:$scope.title
+        },
+        dataType:"jsonp",
+        crossDomain:true,
+        success:function (data) {
+            newPost = data.data;
+            newPost.postDate = new Date();
+            newPost.link = $scope.link;
+            newPost.type = "Movie";
+
+            $scope.items.push(newPost);
+            localStorage.setItem('items', JSON.stringify($scope.items));
+        },
+        error:function () {
+            console.log("Failed getting back IMDB infos on Movie");
+        }
+    });
+
+    $scope.title = null;
+    $scope.link = null;
+
+    $location.path("/movies");
+}
+
+function removeMusic($scope, index) {
+    $scope.newAlbum.musics.splice(index, 1);
+    $scope.newAlbum.musics.forEach(function (music) {
+        if (music.track > index){
+            music.track -= 1;
+        }
+    });
+}
 
 
