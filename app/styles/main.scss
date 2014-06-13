@@ -130,10 +130,12 @@ body {
       }
     }
 
-    .album {
+    .album, .music {
       .panel-heading {
         @include grad($lightBlue, $vlightGrey);
       }
+    }
+    .album{
       .panel-body {
         height: auto;
       }
@@ -145,6 +147,11 @@ body {
     text-align: center;
     @include grad($deepBlue, $lightBlue);
     color: $vlightGrey
+  }
+
+  .spe-button {
+      min-width: 95px;
+    @include border-radius(3px);
   }
 }
 

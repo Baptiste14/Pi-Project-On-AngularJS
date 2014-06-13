@@ -30,11 +30,11 @@ angular
             controller: 'MainCtrl'
         })
         .when('/Upload_movie', {
-            templateUrl: 'views/upload_movie.html',
+            templateUrl: 'views/upload/upload_movie.html',
             controller: 'MainCtrl'
         })
         .when('/Upload_music', {
-            templateUrl: 'views/upload_music.html',
+            templateUrl: 'views/upload/upload_music.html',
             controller: 'MainCtrl'
         })
         .otherwise({
