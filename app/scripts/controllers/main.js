@@ -1,9 +1,8 @@
 'use strict';
-
+var first = 0;
 angular.module('responsiveApp')
     .controller('MainCtrl', function ($scope, $http, $location) {
         var local_url = './db.json';
-        var first = 0;
 
         $scope.location = null;
         $scope.location = $location.path();
@@ -12,6 +11,7 @@ angular.module('responsiveApp')
         getItems($scope, $http, local_url, first);
 
         $scope.newAlbum = {
+            "type" : "Music",
             "musics":[
                 {
                     "title":"",
@@ -49,7 +49,7 @@ angular.module('responsiveApp')
             $scope.title = null;
             $scope.link = null;
 
-            $location.path("/");
+            $location.path("/Movies");
         };
         $scope.addMusic = function(){
             console.log($scope.newAlbum.musics.length);
@@ -60,10 +60,11 @@ angular.module('responsiveApp')
             });
         };
         $scope.addAlbum = function() {
-            $scope.newAlbum.type = "Music";
+            $scope.newAlbum.postDate = new Date();
             $scope.items.push($scope.newAlbum);
-            console.log("Added movie : " + $scope.newAlbum.title);
+            console.log("Added movie : " + JSON.stringify($scope.newAlbum));
             localStorage.setItem('items', JSON.stringify($scope.items));
+            $location.path("/Musics");
         };
         $scope.removeMusic = function(index) {
             $scope.newAlbum.musics.splice(index, 1);
@@ -76,7 +77,7 @@ angular.module('responsiveApp')
         };
     });
 
-function getItems($scope, $http, local_url, first){
+function getItems($scope, $http, local_url){
     if (first == 0) {
         console.log("Loading Data from JSON.");
         $http.get(local_url)

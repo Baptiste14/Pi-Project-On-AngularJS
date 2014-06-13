@@ -109,7 +109,9 @@ body {
 
   .panel {
     .panel-heading {
+      padding: auto;
       font-size: 1.2em;
+      height: 80px;
       a {
         color: inherit;
       }
