@@ -24,9 +24,7 @@ body {
   font-family: "Acens";
 }
 
-
-
-.header, .footer{
+.header, .footer {
   @include boxed($mdRadius, $deepBlue, $lightBlue);
   color: $lightGrey;
   padding-top: 0px;
@@ -34,7 +32,7 @@ body {
   padding-right: $mdPadding;
   padding-bottom: $mdPadding;
 
-  h1{
+  h1 {
     margin-top: 0px;
   }
 
@@ -92,7 +90,6 @@ body {
     @include grad($vlightGrey, $lightGrey);
   }
 
-
 }
 
 .content {
@@ -101,7 +98,7 @@ body {
   margin-bottom: $mdMargin;
   padding: $mdPadding;
   @include boxedTable();
-  min-height: $lgHeight;
+  min-height: $smHeight;
 
   h2 {
     font-size: 2.5em;
@@ -110,6 +107,9 @@ body {
     padding-bottom: $mdPadding;
   }
 
+  .album .panel .panel-body {
+    height: auto;
+  }
   .panel {
     .panel-heading {
       font-size: 1.2em;
@@ -149,7 +149,7 @@ body {
 
 }
 
-.footer{
+.footer {
   padding: 0px;
 }
 

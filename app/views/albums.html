@@ -2,7 +2,7 @@
 <div class="content">
     <div class="row">
         <div class="col-lg-12">
-            <h2>Recent Additions</h2>
+            <h2>Albums</h2>
             <div ng-repeat="item in items | filter : {type : 'music'} | filter : search | orderBy : 'artist' : reverse">
                 <div class="col-xs-12 col-sm-6 col-lg-3">
                     <album-display ></album-display>
