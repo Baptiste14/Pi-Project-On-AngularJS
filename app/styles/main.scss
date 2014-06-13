@@ -107,9 +107,6 @@ body {
     padding-bottom: $mdPadding;
   }
 
-  .album .panel .panel-body {
-    height: auto;
-  }
   .panel {
     .panel-heading {
       font-size: 1.2em;
@@ -133,9 +130,12 @@ body {
       }
     }
 
-    .music {
+    .album {
       .panel-heading {
         @include grad($lightBlue, $vlightGrey);
+      }
+      .panel-body {
+        height: auto;
       }
     }
   }
@@ -146,7 +146,6 @@ body {
     @include grad($deepBlue, $lightBlue);
     color: $vlightGrey
   }
-
 }
 
 .footer {

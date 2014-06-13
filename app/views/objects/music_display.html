@@ -1,16 +1,19 @@
 <div class = "panel">
-    <div class="music">
+    <div class="album">
         <div class="panel-heading">
             {{music.title}}
+            <div class="pull-right"></div>
         </div>
         <div class="panel-body">
-            <audio controls>
-                <source src="{{music.link}}" type="audio/mpeg">
-                Your browser does not support this audio format.
-            </audio>
+            Track {{music.track}}
         </div>
         <div class="panel-footer">
-            Track {{music.track}}
+            <center>
+                <audio controls>
+                    <source src="{{music.link}}" type="audio/mpeg">
+                    Your browser does not support this audio format.
+                </audio>
+            </center>
         </div>
     </div>
 </div>
