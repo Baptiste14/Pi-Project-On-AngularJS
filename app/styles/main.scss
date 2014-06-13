@@ -24,9 +24,7 @@ body {
   font-family: "Acens";
 }
 
-.footer{
-  height: $xsHeight;
-}
+
 
 .header, .footer{
   @include boxed($mdRadius, $deepBlue, $lightBlue);
@@ -103,6 +101,7 @@ body {
   margin-bottom: $mdMargin;
   padding: $mdPadding;
   @include boxedTable();
+  min-height: $lgHeight;
 
   h2 {
     font-size: 2.5em;
@@ -150,6 +149,9 @@ body {
 
 }
 
+.footer{
+  padding: 0px;
+}
 
 
 

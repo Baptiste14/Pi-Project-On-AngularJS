@@ -19,7 +19,7 @@
             </ul>
         </div>
     </div>
-    <div class="row">
+    <div class="row" ng-show="location == '/musics' || location == '/' || location == '/movies'">
         <button ng-click="show = !show" class="btn btn-default col-xs-1 col-xs-push-1 glyphicon glyphicon-search"/>
         <div ng-show="show" class="col-xs-9 col-xs-push-1">
             <input type="text" class="form-control" id="search" ng-model = "$parent.search">
